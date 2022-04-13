@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_baseline_home_24"
         android:title="Home" />
 
-    <item android:title="Pages">
+    <item android:title="Categories">
         <menu>
 
             <item
