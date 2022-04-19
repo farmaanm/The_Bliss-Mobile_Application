@@ -13,11 +13,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="161dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/web_logo" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/paprika"
             android:text="Welcome to The Bliss"
             android:textAlignment="center"
@@ -29,10 +39,10 @@
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
-        <ImageButton
-            android:id="@+id/btn_homeCakes"
+        <ImageView
+            android:id="@+id/img_homeCakes"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="60dp"
@@ -40,14 +50,14 @@
             android:background="@null"
             android:scaleType="fitCenter"
             android:visibility="visible"
-            app:layout_constraintEnd_toStartOf="@+id/btn_homeFlowers"
+            app:layout_constraintEnd_toStartOf="@+id/img_homeFlowers"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:srcCompat="@drawable/home_cakes" />
 
         <ImageButton
-            android:id="@+id/btn_homeFlowers"
+            android:id="@+id/img_homeFlowers"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="52dp"
@@ -59,8 +69,8 @@
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:srcCompat="@drawable/home_flowers" />
 
-        <ImageButton
-            android:id="@+id/btn_homeStage"
+        <ImageView
+            android:id="@+id/img_homeStage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="60dp"
@@ -68,14 +78,14 @@
             android:background="@null"
             android:scaleType="fitCenter"
             android:visibility="visible"
-            app:layout_constraintEnd_toStartOf="@+id/btn_homeCostumes"
+            app:layout_constraintEnd_toStartOf="@+id/img_homeCostumes"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_homeCakes"
+            app:layout_constraintTop_toBottomOf="@+id/img_homeCakes"
             app:srcCompat="@drawable/home_stage" />
 
-        <ImageButton
-            android:id="@+id/btn_homeCostumes"
+        <ImageView
+            android:id="@+id/img_homeCostumes"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="40dp"
@@ -84,11 +94,11 @@
             android:scaleType="fitCenter"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_homeFlowers"
+            app:layout_constraintTop_toBottomOf="@+id/img_homeFlowers"
             app:srcCompat="@drawable/home_cos" />
 
-        <ImageButton
-            android:id="@+id/btn_homeGifts"
+        <ImageView
+            android:id="@+id/img_homeGifts"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="40dp"
@@ -97,8 +107,10 @@
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_homeStage"
+            app:layout_constraintTop_toBottomOf="@+id/img_homeStage"
             app:srcCompat="@drawable/home_gift" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView

@@ -4,54 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home" />
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+    </group>
 
     <item android:title="Categories">
         <menu>
+            <group>
+                <item
+                    android:id="@+id/nav_cakes"
+                    android:icon="@drawable/ic_baseline_cake_24"
+                    android:title="Cakes" />
 
-            <item
-                android:id="@+id/nav_cakes"
-                android:icon="@drawable/ic_baseline_cake_24"
-                android:title="Cakes" />
+                <item
+                    android:id="@+id/nav_flowers"
+                    android:icon="@drawable/ic_baseline_local_florist_24"
+                    android:title="Flowers &amp; Decorations" />
 
-            <item
-                android:id="@+id/nav_flowers"
-                android:icon="@drawable/ic_baseline_local_florist_24"
-                android:title="Flowers &amp; Decorations" />
+                <item
+                    android:id="@+id/nav_photography"
+                    android:icon="@drawable/ic_baseline_photo_camera_24"
+                    android:title="Photography &amp; Music" />
 
-            <item
-                android:id="@+id/nav_photography"
-                android:icon="@drawable/ic_baseline_photo_camera_24"
-                android:title="Photography &amp; Music" />
+                <item
+                    android:id="@+id/nav_costumes"
+                    android:icon="@drawable/ic_baseline_family_restroom_24"
+                    android:title="Costumes &amp; Makeup" />
 
-            <item
-                android:id="@+id/nav_costumes"
-                android:icon="@drawable/ic_baseline_family_restroom_24"
-                android:title="Costumes &amp; Makeup" />
-
-            <item
-                android:id="@+id/nav_gifts"
-                android:icon="@drawable/ic_baseline_card_giftcard_24"
-                android:title="Gifts" />
+                <item
+                    android:id="@+id/nav_gifts"
+                    android:icon="@drawable/ic_baseline_card_giftcard_24"
+                    android:title="Gifts" />
+            </group>
         </menu>
     </item>
 
     <item android:title="Contact">
         <menu>
+            <group>
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/ic_baseline_call_24"
+                    android:title="Contact Us" />
 
-            <item
-                android:id="@+id/contact"
-                android:icon="@drawable/ic_baseline_call_24"
-                android:title="Contact Us" />
-
-            <item
-                android:id="@+id/nav_about"
-                android:icon="@drawable/ic_baseline_note_24"
-                android:title="About" />
-
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_baseline_note_24"
+                    android:title="About" />
+            </group>
         </menu>
     </item>
 
