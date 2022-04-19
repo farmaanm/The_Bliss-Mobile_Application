@@ -35,36 +35,70 @@ class MainActivity : AppCompatActivity() {
 
             when(it.itemId){
 
-                /*R.id.nav_contact -> val intent = Intent(this, ContactActivity::class.java)
-                                    startActivity(intent)*/
-
-                /*R.id.nav_contact ->Toast.makeText(applicationContext,"Clicked Home", Toast.LENGTH_SHORT).show()*/
-
-                                     /*Intent homepage = new Intent(MainActivity.this, ContactActivity.class)
-                                      startActivity(homepage)*/
-
-                R.id.nav_contact -> beginActivity(ContactActivity())
+                /*
+                R.id.nav_home -> beginHomeActivity()
+                R.id.nav_cakes -> beginCakesActivity()
+                R.id.nav_flowers -> beginFlowersActivity()
+                R.id.nav_photography -> beginPhotographyActivity()
+                R.id.nav_costumes -> beginCostumesActivity()
+                R.id.nav_gifts -> beginGiftsActivity()*/
+                R.id.nav_contact -> beginContactActivity()
+                /*R.id.nav_about -> beginAboutActivity()*/
             }
             true
         }
-
-        //val contact_button = findViewById<>(nav_contact)
-
     }
 
-    private fun beginActivity(activity: Activity) {
-        val intent = Intent(this, Activity::class.java).apply{
-
-        }
+    /*
+    private fun beginHomeActivity() {
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
+    private fun beginCakesActivity() {
+        val intent = Intent(this, CakesActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun beginFlowersActivity() {
+        val intent = Intent(this, FlowersActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun beginPhotographyActivity() {
+        val intent = Intent(this, PhotographyActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun beginCostumesActivity() {
+        val intent = Intent(this, CostumesActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun beginGiftsActivity() {
+        val intent = Intent(this, GiftsActivity::class.java)
+        startActivity(intent)
+    }
+
+     */
+
+    private fun beginContactActivity() {
+        val intent = Intent(this, ContactActivity::class.java)
+        startActivity(intent)
+    }
+
+    /*
+    private fun beginAboutActivity() {
+        val intent = Intent(this, AboutActivity::class.java)
+        startActivity(intent)
+    }
+
+     */
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (toggle.onOptionsItemSelected(item) /*== R.id.nav_contact*/) {
+        if (toggle.onOptionsItemSelected(item)) {
             return true
         }
-
         return super.onOptionsItemSelected(item)
     }
 }

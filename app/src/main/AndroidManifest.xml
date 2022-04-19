@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheBliss">
         <activity
-            android:name=".contactActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AboutActivity"
+            android:name=".CakesActivity"
             android:exported="false" />
         <activity
             android:name=".ContactActivity"
