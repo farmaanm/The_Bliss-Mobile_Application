@@ -1,29 +1,37 @@
 package com.example.thebliss
 
-import android.app.Activity
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
-import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.appbar.CollapsingToolbarLayout
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity
+import com.example.thebliss.databinding.ActivityCakesBinding
 import com.google.android.material.navigation.NavigationView
+import androidx.drawerlayout.widget.DrawerLayout
+import android.content.Intent
+import android.view.MenuItem
 
-class MainActivity : AppCompatActivity() {
+class CakesActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
     lateinit var drawerLayout: DrawerLayout
+    private lateinit var binding: ActivityCakesBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_cakes)
+
+        binding = ActivityCakesBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        setSupportActionBar(findViewById(R.id.toolbar))
+        binding.toolbarLayout.title = title
 
         drawerLayout = findViewById(R.id.drawerLayout)
-        val navView : NavigationView = findViewById(R.id.nav_view)
+        val navView: NavigationView = findViewById(R.id.nav_view)
 
-        toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
+        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
@@ -33,8 +41,7 @@ class MainActivity : AppCompatActivity() {
 
             it.isChecked = true
 
-            when(it.itemId){
-
+            when (it.itemId) {
 
                 R.id.nav_home -> beginHomeActivity()
                 R.id.nav_cakes -> beginCakesActivity()
@@ -47,6 +54,14 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+        /*
+        binding.btnCartIcon.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+        }
+        */
+
     }
 
     private fun beginHomeActivity() {
@@ -79,7 +94,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, GiftsActivity::class.java)
         startActivity(intent)
     }
-
      */
 
     private fun beginContactActivity() {
@@ -92,7 +106,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, AboutActivity::class.java)
         startActivity(intent)
     }
-
      */
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
