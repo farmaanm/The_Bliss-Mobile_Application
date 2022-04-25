@@ -79,20 +79,17 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, GiftsActivity::class.java)
         startActivity(intent)
     }
-
-     */
+    */
 
     private fun beginContactActivity() {
         val intent = Intent(this, ContactActivity::class.java)
         startActivity(intent)
     }
-
     /*
     private fun beginAboutActivity() {
         val intent = Intent(this, AboutActivity::class.java)
         startActivity(intent)
     }
-
      */
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

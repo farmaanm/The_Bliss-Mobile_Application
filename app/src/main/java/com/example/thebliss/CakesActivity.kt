@@ -15,7 +15,7 @@ import android.view.MenuItem
 class CakesActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
-    lateinit var drawerLayout: DrawerLayout
+    private lateinit var drawerLayout: DrawerLayout
     private lateinit var binding: ActivityCakesBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,12 +55,12 @@ class CakesActivity : AppCompatActivity() {
             true
         }
 
-        /*
+
         binding.btnCartIcon.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
-        */
+
 
     }
 

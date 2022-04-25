@@ -9,14 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheBliss">
-        <activity
-            android:name=".CakesActivity"
-            android:exported="false"
-            android:label="@string/title_activity_cakes"
-            android:theme="@style/Theme.TheBliss.NoActionBar" />
-        <activity
-            android:name=".ContactActivity"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -26,6 +19,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".CakesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_cakes"
+            android:theme="@style/Theme.TheBliss.NoActionBar" />
+
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false"
+            android:label="@string/title_activity_contact"
+            android:theme="@style/Theme.TheBliss.NoActionBar" />
     </application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 
 </manifest>

@@ -56,7 +56,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:srcCompat="@drawable/home_cakes" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/img_homeFlowers"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -109,7 +109,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img_homeStage"
             app:srcCompat="@drawable/home_gift" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
