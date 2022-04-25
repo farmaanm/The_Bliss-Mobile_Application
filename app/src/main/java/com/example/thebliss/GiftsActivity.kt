@@ -1,27 +1,28 @@
 package com.example.thebliss
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.drawerlayout.widget.DrawerLayout
-import com.example.thebliss.databinding.ActivityContactBinding
-import com.google.android.material.navigation.NavigationView
+import com.google.android.material.appbar.CollapsingToolbarLayout
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity
+import com.example.thebliss.databinding.ActivityGiftsBinding
+import com.google.android.material.navigation.NavigationView
+import androidx.drawerlayout.widget.DrawerLayout
+import android.content.Intent
+import android.view.MenuItem
 
-class ContactActivity : AppCompatActivity() {
+class GiftsActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
     private lateinit var drawerLayout: DrawerLayout
-    private lateinit var binding: ActivityContactBinding
+    private lateinit var binding: ActivityGiftsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_contact)
+        setContentView(R.layout.activity_gifts)
 
-        binding = ActivityContactBinding.inflate(layoutInflater)
+        binding = ActivityGiftsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(findViewById(R.id.toolbar))
@@ -54,11 +55,13 @@ class ContactActivity : AppCompatActivity() {
             true
         }
 
-        binding.btnContactIcon.setOnClickListener {
-            val callIntent = Intent(Intent.ACTION_DIAL)
-            callIntent.data = Uri.parse("tel:0758982572")
-            startActivity(callIntent)
+
+        binding.btnCartIcon.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
         }
+
+
     }
 
     private fun beginHomeActivity() {

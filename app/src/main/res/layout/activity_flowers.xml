@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     android:id="@+id/drawerLayout"
     android:background="@drawable/gradient_background"
-    tools:context=".CakesActivity">
+    tools:context=".FlowersActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             </com.google.android.material.appbar.CollapsingToolbarLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
-        <include layout="@layout/scrolling_cakes" />
+        <include layout="@layout/scrolling_flowers" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnCartIcon"

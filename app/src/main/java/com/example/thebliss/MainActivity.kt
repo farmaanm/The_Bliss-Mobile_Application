@@ -38,10 +38,10 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.nav_home -> beginHomeActivity()
                 R.id.nav_cakes -> beginCakesActivity()
-                /*R.id.nav_flowers -> beginFlowersActivity()
-                R.id.nav_photography -> beginPhotographyActivity()
+                R.id.nav_flowers -> beginFlowersActivity()
+                /*R.id.nav_photography -> beginPhotographyActivity()*/
                 R.id.nav_costumes -> beginCostumesActivity()
-                R.id.nav_gifts -> beginGiftsActivity()*/
+                R.id.nav_gifts -> beginGiftsActivity()
                 R.id.nav_contact -> beginContactActivity()
                 /*R.id.nav_about -> beginAboutActivity()*/
             }
@@ -59,17 +59,17 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    /*
+
     private fun beginFlowersActivity() {
         val intent = Intent(this, FlowersActivity::class.java)
         startActivity(intent)
     }
-
+    /*
     private fun beginPhotographyActivity() {
         val intent = Intent(this, PhotographyActivity::class.java)
         startActivity(intent)
     }
-
+    */
     private fun beginCostumesActivity() {
         val intent = Intent(this, CostumesActivity::class.java)
         startActivity(intent)
@@ -79,7 +79,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, GiftsActivity::class.java)
         startActivity(intent)
     }
-    */
 
     private fun beginContactActivity() {
         val intent = Intent(this, ContactActivity::class.java)
