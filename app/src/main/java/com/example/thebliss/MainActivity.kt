@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_costumes -> beginCostumesActivity()
                 R.id.nav_gifts -> beginGiftsActivity()
                 R.id.nav_contact -> beginContactActivity()
-                /*R.id.nav_about -> beginAboutActivity()*/
+                R.id.nav_about -> beginAboutActivity()
             }
             true
         }
@@ -84,12 +84,11 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, ContactActivity::class.java)
         startActivity(intent)
     }
-    /*
+
     private fun beginAboutActivity() {
         val intent = Intent(this, AboutActivity::class.java)
         startActivity(intent)
     }
-     */
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item)) {

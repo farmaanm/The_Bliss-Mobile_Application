@@ -2,11 +2,14 @@
     <string name="app_name">The Bliss</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name="title_activity_cakes">Cakes</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_contact">Contact Us</string>
+    <string name="title_activity_cakes">Cakes</string>
     <string name="title_activity_flowers">Flowers &amp; Decorations</string>
-    <string name="large_text">Hi, This is the large text</string>
     <string name="title_activity_costumes">Costumes &amp; Makeup</string>
     <string name="title_activity_gifts">Gifts</string>
+    <string name="title_activity_cart">Cart</string>
+    <string name="title_activity_about">About Us</string>
+    <string name="title_activity_contact">Contact Us</string>
+
+    <string name="large_text">This is a large text</string>
 </resources>

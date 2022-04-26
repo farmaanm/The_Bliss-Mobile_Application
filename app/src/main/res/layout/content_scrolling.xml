@@ -9,12 +9,6 @@
     tools:context=".CakesActivity"
     tools:showIn="@layout/activity_cakes">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
-
     <!--Create another XML file and import it here-->
 
 </androidx.core.widget.NestedScrollView>

@@ -50,15 +50,15 @@ class CostumesActivity : AppCompatActivity() {
                 R.id.nav_costumes -> beginCostumesActivity()
                 R.id.nav_gifts -> beginGiftsActivity()
                 R.id.nav_contact -> beginContactActivity()
-                /*R.id.nav_about -> beginAboutActivity()*/
+                R.id.nav_about -> beginAboutActivity()
             }
             true
         }
 
 
-        binding.btnCartIcon.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        binding.btnCartIcon.setOnClickListener {
+            val intent = Intent(this, CartActivity::class.java)
+            startActivity(intent)
         }
 
 
@@ -100,12 +100,10 @@ class CostumesActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    /*
     private fun beginAboutActivity() {
         val intent = Intent(this, AboutActivity::class.java)
         startActivity(intent)
     }
-     */
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (toggle.onOptionsItemSelected(item)) {
