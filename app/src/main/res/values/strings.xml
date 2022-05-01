@@ -11,5 +11,16 @@
     <string name="title_activity_about">About Us</string>
     <string name="title_activity_contact">Contact Us</string>
 
+    <string name="address_value">26, 15 St Anthoney\'s Road,\nNegombo 11500</string>
+
     <string name="large_text">This is a large text</string>
+    <string name="get_in_touch">Get in touch</string>
+    <string name="name">Name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send_message">Send Message</string>
+    <string name="connect_with_us">Connect with us</string>
+    <string name="address">Address:</string>
+    <string name="website_amp_social"><![CDATA[Website & Social:]]></string>
 </resources>
