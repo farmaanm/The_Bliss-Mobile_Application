@@ -44,7 +44,6 @@
 
             <include layout="@layout/scrolling_contact" />
 
-
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/btnContactIcon"
                 android:layout_width="wrap_content"
