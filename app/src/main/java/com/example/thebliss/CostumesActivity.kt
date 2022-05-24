@@ -2,15 +2,14 @@ package com.example.thebliss
 
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.google.android.material.appbar.CollapsingToolbarLayout
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.thebliss.databinding.ActivityCostumesBinding
 import com.google.android.material.navigation.NavigationView
 import androidx.drawerlayout.widget.DrawerLayout
 import android.content.Intent
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.Toast
 
 class CostumesActivity : AppCompatActivity() {
 
@@ -46,7 +45,7 @@ class CostumesActivity : AppCompatActivity() {
                 R.id.nav_home -> beginHomeActivity()
                 R.id.nav_cakes -> beginCakesActivity()
                 R.id.nav_flowers -> beginFlowersActivity()
-                /*R.id.nav_photography -> beginPhotographyActivity()*/
+                R.id.nav_photography -> beginPhotographyActivity()
                 R.id.nav_costumes -> beginCostumesActivity()
                 R.id.nav_gifts -> beginGiftsActivity()
                 R.id.nav_contact -> beginContactActivity()
@@ -61,11 +60,36 @@ class CostumesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val but1 : Button = findViewById(R.id.button1)
+        val but2 : Button = findViewById(R.id.button2)
+
+        but1.setOnClickListener {
+
+            val intent = Intent(this,CartActivity::class.java)
+            intent.putExtra("ProductName","Wedding gown")
+            intent.putExtra("ProductImage","bridalfrock1")
+            intent.putExtra("ProductPrice","9000")
+            startActivity(intent)
+
+            Toast.makeText(this, "Added to cart!", Toast.LENGTH_LONG).show()
+        }
+
+        but2.setOnClickListener {
+
+            val intent = Intent(this,CartActivity::class.java)
+            intent.putExtra("ProductName","Modern kandyan bridal dress")
+            intent.putExtra("ProductImage","kandyansaree1")
+            intent.putExtra("ProductPrice","30000")
+            startActivity(intent)
+
+            Toast.makeText(this, "Added to cart!", Toast.LENGTH_LONG).show()
+        }
+
 
     }
 
     private fun beginHomeActivity() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
     }
 
@@ -79,12 +103,12 @@ class CostumesActivity : AppCompatActivity() {
         val intent = Intent(this, FlowersActivity::class.java)
         startActivity(intent)
     }
-    /*
+
     private fun beginPhotographyActivity() {
         val intent = Intent(this, PhotographyActivity::class.java)
         startActivity(intent)
     }
-    */
+
     private fun beginCostumesActivity() {
         val intent = Intent(this, CostumesActivity::class.java)
         startActivity(intent)

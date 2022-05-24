@@ -3,8 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/nimak/Downloads/OneDrive_2022-04-13/3. 04th April 2022/The Bliss/The Bliss/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/nimak/Downloads/OneDrive_2022-04-13/3. 04th April 2022/The Bliss/The Bliss/app/src/main/res/layout/nav_header.xml" value="0.1" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss Final/1. Source Code/PUSL2023_Group_06_Source_Code/The Bliss/app/src/main/res/layout/activity_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss Final/1. Source Code/PUSL2023_Group_06_Source_Code/The Bliss/app/src/main/res/layout/activity_checkout.xml" value="0.264" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss Final/1. Source Code/PUSL2023_Group_06_Source_Code/The Bliss/app/src/main/res/layout/activity_contact.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_about.xml" value="0.128" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_cakes.xml" value="0.264" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_cart.xml" value="0.2" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_checkout.xml" value="0.264" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_contact.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_costumes.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_flowers.xml" value="0.264" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_gifts.xml" value="0.264" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/activity_photography.xml" value="0.264" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/scrolling_about.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/scrolling_cakes.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/scrolling_cart.xml" value="0.264" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/scrolling_costumes.xml" value="0.17527173913043478" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/scrolling_flowers.xml" value="0.1871508379888268" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/scrolling_gifts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/OneDrive/Desktop/The Bliss/app/src/main/res/layout/scrolling_photography.xml" value="0.264" />
       </map>
     </option>
   </component>

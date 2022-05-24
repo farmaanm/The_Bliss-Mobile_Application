@@ -42,7 +42,392 @@
             </com.google.android.material.appbar.CollapsingToolbarLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
-        <include layout="@layout/scrolling_about" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".AboutActivity"
+            tools:showIn="@layout/activity_about">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblWhyChooseUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/paprika"
+                    android:text="Why Choose Us"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lblDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/paprika"
+                    android:text="@string/about_desc"
+                    android:textAlignment="center"
+                    android:padding="17dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblWhyChooseUs" />
+
+                <TableLayout
+                    android:id="@+id/why1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/lblDesc">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="300dp"
+                            android:layout_height="170dp"
+                            android:src="@drawable/why1"
+                            android:layout_gravity="center"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/lblWhy1Head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/alata"
+                            android:text="Outstanding Quality"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_200"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/lblWhy1Desc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:background="@color/purple_200"
+                            android:fontFamily="@font/alata"
+                            android:text="@string/why1_desc"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/why2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/why1"
+                    android:layout_marginTop="20dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="300dp"
+                            android:layout_height="170dp"
+                            android:src="@drawable/why2"
+                            android:layout_gravity="center"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/lblWhy2Head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/alata"
+                            android:text="Embrace Joy"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_200"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/lblWhy2Desc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:background="@color/purple_200"
+                            android:fontFamily="@font/alata"
+                            android:text="@string/why2_desc"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/why3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/why2"
+                    android:layout_marginTop="20dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="300dp"
+                            android:layout_height="170dp"
+                            android:src="@drawable/why3"
+                            android:layout_gravity="center"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/lblWhy3Head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:background="@color/white"
+                            android:fontFamily="@font/alata"
+                            android:text="Personalized Service"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_200"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/lblWhy3Desc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:background="@color/purple_200"
+                            android:fontFamily="@font/alata"
+                            android:text="@string/why3_desc"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/lblWhatWeveDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/paprika"
+                    android:text="What We've Done"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/why3" />
+
+                <TableRow
+                    android:id="@+id/tblParty1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/lblWhatWeveDone"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgParty1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/party1" />
+
+                    <TextView
+                        android:id="@+id/lblParty1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alata"
+                        android:text="BATCH REUNION\nLyceum International School\nClass of 2005"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp"
+                        android:paddingStart="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tblParty2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/tblParty1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/lblParty2"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alata"
+                        android:text="WEDDING\nEmma &amp; David"
+                        android:textAlignment="textEnd"
+                        android:textSize="15sp"
+                        android:paddingEnd="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/imgParty2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/party2" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tblParty3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/tblParty2"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgParty3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/party3" />
+
+                    <TextView
+                        android:id="@+id/lblParty3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alata"
+                        android:text="BIRTHDAY\nJennifer's 21st"
+                        android:textAlignment="textStart"
+                        android:textSize="15sp"
+                        android:paddingStart="5dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tblParty4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/tblParty3"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/lblParty4"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alata"
+                        android:text="SOCIAL GATHERING\nRoyal Institute\nClass of 2020"
+                        android:textAlignment="textEnd"
+                        android:textSize="15sp"
+                        android:paddingEnd="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/imgParty4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/party4" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tblParty5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/tblParty4"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgParty5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/party5" />
+
+                    <TextView
+                        android:id="@+id/lblParty5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/alata"
+                        android:text="GET TOGETHER\nAitken Spence PLC"
+                        android:textAlignment="textStart"
+                        android:paddingStart="5dp"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!--
         <com.google.android.material.floatingactionbutton.FloatingActionButton

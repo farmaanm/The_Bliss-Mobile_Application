@@ -2,9 +2,6 @@ package com.example.thebliss
 
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.google.android.material.appbar.CollapsingToolbarLayout
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.thebliss.databinding.ActivityAboutBinding
 import com.google.android.material.navigation.NavigationView
@@ -46,7 +43,7 @@ class AboutActivity : AppCompatActivity() {
                 R.id.nav_home -> beginHomeActivity()
                 R.id.nav_cakes -> beginCakesActivity()
                 R.id.nav_flowers -> beginFlowersActivity()
-                /*R.id.nav_photography -> beginPhotographyActivity()*/
+                R.id.nav_photography -> beginPhotographyActivity()
                 R.id.nav_costumes -> beginCostumesActivity()
                 R.id.nav_gifts -> beginGiftsActivity()
                 R.id.nav_contact -> beginContactActivity()
@@ -65,7 +62,7 @@ class AboutActivity : AppCompatActivity() {
     }
 
     private fun beginHomeActivity() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
     }
 
@@ -78,12 +75,12 @@ class AboutActivity : AppCompatActivity() {
         val intent = Intent(this, FlowersActivity::class.java)
         startActivity(intent)
     }
-    /*
+
     private fun beginPhotographyActivity() {
         val intent = Intent(this, PhotographyActivity::class.java)
         startActivity(intent)
     }
-    */
+
     private fun beginCostumesActivity() {
         val intent = Intent(this, CostumesActivity::class.java)
         startActivity(intent)

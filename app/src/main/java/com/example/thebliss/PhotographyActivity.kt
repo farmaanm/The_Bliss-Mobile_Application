@@ -3,26 +3,24 @@ package com.example.thebliss
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.thebliss.databinding.ActivityGiftsBinding
+import com.example.thebliss.databinding.ActivityPhotographyBinding
 import com.google.android.material.navigation.NavigationView
 import androidx.drawerlayout.widget.DrawerLayout
 import android.content.Intent
+import android.net.Uri
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.Toast
 
-class
-GiftsActivity : AppCompatActivity() {
+class PhotographyActivity : AppCompatActivity() {
 
     lateinit var toggle: ActionBarDrawerToggle
     private lateinit var drawerLayout: DrawerLayout
-    private lateinit var binding: ActivityGiftsBinding
+    private lateinit var binding: ActivityPhotographyBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gifts)
+        setContentView(R.layout.activity_photography)
 
-        binding = ActivityGiftsBinding.inflate(layoutInflater)
+        binding = ActivityPhotographyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(findViewById(R.id.toolbar))
@@ -56,34 +54,10 @@ GiftsActivity : AppCompatActivity() {
         }
 
 
-        binding.btnCartIcon.setOnClickListener {
-            val intent = Intent(this, CartActivity::class.java)
-            startActivity(intent)
-        }
-
-        val but1 : Button = findViewById(R.id.button1)
-        val but2 : Button = findViewById(R.id.button2)
-
-        but1.setOnClickListener {
-
-            val intent = Intent(this,CartActivity::class.java)
-            intent.putExtra("ProductName","Baby Bathing Set")
-            intent.putExtra("ProductImage","babywash1")
-            intent.putExtra("ProductPrice","3000")
-            startActivity(intent)
-
-            Toast.makeText(this, "Added to cart!", Toast.LENGTH_LONG).show()
-        }
-
-        but2.setOnClickListener {
-
-            val intent = Intent(this,CartActivity::class.java)
-            intent.putExtra("ProductName","Baby Blankets")
-            intent.putExtra("ProductImage","blankets1")
-            intent.putExtra("ProductPrice","1000")
-            startActivity(intent)
-
-            Toast.makeText(this, "Added to cart!", Toast.LENGTH_LONG).show()
+        binding.btnCallIcon.setOnClickListener {
+            val callIntent = Intent(Intent.ACTION_DIAL)
+            callIntent.data = Uri.parse("tel:0759168916")
+            startActivity(callIntent)
         }
 
 

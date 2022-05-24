@@ -5,6 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_cakes">Cakes</string>
     <string name="title_activity_flowers">Flowers &amp; Decorations</string>
+    <string name="title_activity_photography">Photography &amp; Music</string>
     <string name="title_activity_costumes">Costumes &amp; Makeup</string>
     <string name="title_activity_gifts">Gifts</string>
     <string name="title_activity_cart">Cart</string>
@@ -23,4 +24,9 @@
     <string name="connect_with_us">Connect with us</string>
     <string name="address">Address:</string>
     <string name="website_amp_social"><![CDATA[Website & Social:]]></string>
+    <string name="about_desc">We are committed to provide our customers with an exceptional service while offering our employees the best training.</string>
+    <string name="why1_desc">Irrespective of how big or small your event is, we aim to lift the burden off your shoulders by offering you the promise of outstanding quality and professionalism.</string>
+    <string name="why2_desc">Our crew would be bound to loose your stress and help you embrace the joy, excitement and enthusiasm as you wait expectantly for the dawning of your dream event.</string>
+    <string name="why3_desc">From the initial idea discussion to finalizing, we provide you an end to end, consistent, personalized service in delivering you an ultimate impeccable experience.</string>
+
 </resources>
